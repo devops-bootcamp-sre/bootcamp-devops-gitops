@@ -7,3 +7,6 @@ images:
 - name: abalderasp/bootcamp-devops-api
   newName: abalderasp/bootcamp-devops-api
   newTag: 54d08402d7b9e3708f1b4dbad2ba3862eee7ab50
+- name: abalderasp/bootcamp-devops-api-dev
+  newName: abalderasp/bootcamp-devops-api-dev
+  newTag: 7ebd27d8d529d4228727a4a446cad65e232e7361
