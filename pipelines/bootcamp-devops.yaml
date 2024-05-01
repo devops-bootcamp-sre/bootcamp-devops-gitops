@@ -1,19 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: api
+  name: bootcamp-devops
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: api
+    namespace: bootcamp-devops
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: gitops-bootcamp/api
-    repoURL: https://github.com/abalderasp/bootcamp-devops-project1.git
-    targetRevision: development
+    path: pipelines/
+    repoURL: https://github.com/devops-bootcamp-sre/bootcamp-devops-gitops.git
+    targetRevision: main
   syncPolicy:
     automated:
       prune: true

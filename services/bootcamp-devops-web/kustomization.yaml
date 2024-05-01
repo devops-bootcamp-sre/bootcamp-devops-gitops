@@ -3,7 +3,3 @@ kind: Kustomization
 resources:
 - deployment.yaml
 - service.yaml
-images:
-- name: abalderasp/bootcamp-devops-project1-web
-  newName: abalderasp/bootcamp-devops-project1-web
-  newTag: 34d779887f1a73ae9d57d9551158219931ddd021
