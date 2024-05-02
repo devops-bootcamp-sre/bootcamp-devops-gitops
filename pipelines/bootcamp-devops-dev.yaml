@@ -3,11 +3,9 @@ kind: Application
 metadata:
   name: bootcamp-devops-dev
   namespace: argocd
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: bootcamp-devops-dev
+    namespace: argocd
     server: https://kubernetes.default.svc
   project: default
   source:
