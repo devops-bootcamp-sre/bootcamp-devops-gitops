@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: bootcamp-devops-api
-          image: "abalderasp/bootcamp-devops-api-dev"
+          image: "gitopsdevopsbootcamp/bootcamp-devops-api-dev"
           ports:
             - containerPort: 5000
               name: http
