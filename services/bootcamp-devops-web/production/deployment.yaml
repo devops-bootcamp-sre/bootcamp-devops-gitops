@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bootcamp-devops-web
+  name: bootcamp-devops-web-prod
 spec:
   selector:
     matchLabels:
-      app: bootcamp-devops-web
+      app: bootcamp-devops-web-prod
   template:
     metadata:
       labels:
-        app: bootcamp-devops-web
+        app: bootcamp-devops-web-prod
     spec:
       containers:
-        - name: bootcamp-devops-web
+        - name: bootcamp-devops-web-prod
           image: "gitopsdevopsbootcamp/bootcamp-devops-web-prod"
           ports:
             - containerPort: 5173
