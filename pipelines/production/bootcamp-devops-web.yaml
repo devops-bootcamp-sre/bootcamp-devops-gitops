@@ -11,7 +11,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: services/bootcamp-devops-web
+    path: services/bootcamp-devops-web/production
     repoURL: https://github.com/devops-bootcamp-sre/bootcamp-devops-gitops.git
     targetRevision: main
   syncPolicy:
