@@ -3,3 +3,6 @@ kind: Kustomization
 resources:
 - deployment.yaml
 - service.yaml
+images:
+- name: gitopsdevopsbootcamp/bootcamp-devops-web-prod
+  newTag: 25aa9f0
