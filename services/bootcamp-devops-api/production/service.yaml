@@ -1,4 +1,4 @@
-bootcamp-devops-api-prodVersion: v1
+apiVersion: v1
 kind: Service
 metadata:
   name: bootcamp-devops-api-prod-svc
