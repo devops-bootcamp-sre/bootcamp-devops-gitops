@@ -1,14 +1,14 @@
-bootcamp-devops-apiVersion: v1
+bootcamp-devops-api-prodVersion: v1
 kind: Service
 metadata:
-  name: bootcamp-devops-api-svc
+  name: bootcamp-devops-api-prod-svc
   labels:
-    app: bootcamp-devops-api
+    app: bootcamp-devops-api-prod
 spec:
   ports:
     - name: http
       port: 80
       targetPort: 5000
   selector:
-    app: bootcamp-devops-api
+    app: bootcamp-devops-api-prod
   type: ClusterIP

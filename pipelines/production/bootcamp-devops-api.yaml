@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: bootcamp-devops-api
+  name: bootcamp-devops-api-prod
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: bootcamp-devops-api
+    namespace: bootcamp-devops-api-prod
     server: https://kubernetes.default.svc
   project: default
   source:
