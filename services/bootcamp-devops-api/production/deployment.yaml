@@ -1,4 +1,4 @@
-bootcamp-devops-apiVersion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: bootcamp-devops-api
@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: bootcamp-devops-api
-          image: "abalderasp/bootcamp-devops-api"
+          image: "gitopsdevopsbootcamp/bootcamp-devops-api-prod"
           ports:
             - containerPort: 5000
               name: http
