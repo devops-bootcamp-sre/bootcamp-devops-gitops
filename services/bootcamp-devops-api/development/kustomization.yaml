@@ -5,4 +5,4 @@ resources:
 - service.yaml
 images:
 - name: gitopsdevopsbootcamp/bootcamp-devops-api-dev
-  newTag: 72a38c4
+  newTag: 983bf5a
